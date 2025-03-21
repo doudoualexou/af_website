@@ -10,7 +10,7 @@
       font-family: 'Roboto', Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background: #f4f4f9;
+      background: #f9f9fb;
       color: #333;
       line-height: 1.6;
     }
@@ -19,18 +19,18 @@
     header {
       background: linear-gradient(135deg, #4a90e2, #0077b6);
       color: white;
-      padding: 40px 20px;
+      padding: 60px 20px;
       text-align: center;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
 
     header h1 {
-      font-size: 2.5rem;
+      font-size: 3rem;
       margin: 0;
     }
 
     header p {
-      font-size: 1.2rem;
+      font-size: 1.3rem;
       margin-top: 10px;
     }
 
@@ -44,16 +44,17 @@
       text-decoration: none;
       margin: 0 15px;
       font-weight: bold;
+      transition: color 0.3s ease;
     }
 
     nav a:hover {
-      text-decoration: underline;
+      color: #ffdd57;
     }
 
     /* Container */
     .container {
-      max-width: 900px;
-      margin: 30px auto;
+      max-width: 1100px;
+      margin: 40px auto;
       padding: 20px;
     }
 
@@ -61,46 +62,68 @@
     .about, .projects, .contact, .cv {
       background: white;
       padding: 30px;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
       border-radius: 12px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
     h2 {
-      font-size: 1.8rem;
+      font-size: 2rem;
       color: #0077b6;
-      margin-bottom: 15px;
+      margin-bottom: 20px;
     }
 
     p {
-      font-size: 1rem;
-      margin-bottom: 15px;
+      font-size: 1.1rem;
+      margin-bottom: 20px;
     }
 
-    .projects ul, .cv ul {
+    /* CV Section */
+    .cv ul {
       list-style: none;
       padding: 0;
     }
 
-    .projects li, .cv li {
+    .cv li {
       margin-bottom: 10px;
+    }
+
+    .cv li::before {
+      content: "•";
+      color: #0077b6;
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+
+    /* Projects Section */
+    .projects ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .projects li {
+      margin-bottom: 15px;
     }
 
     .projects a {
       color: #0077b6;
       text-decoration: none;
       font-weight: bold;
+      transition: color 0.3s ease;
     }
 
     .projects a:hover {
+      color: #ff5733;
       text-decoration: underline;
     }
 
     /* Footer */
     footer {
       text-align: center;
-      padding: 15px;
-      background: #4a90e2;
+      padding: 20px;
+      background: #333;
       color: white;
       font-size: 0.9rem;
       margin-top: 30px;
@@ -110,10 +133,11 @@
       color: #ffdd57;
       text-decoration: none;
       font-weight: bold;
+      transition: color 0.3s ease;
     }
 
     footer a:hover {
-      text-decoration: underline;
+      color: #ff5733;
     }
   </style>
 </head>
@@ -134,8 +158,12 @@
     <section id="about" class="about">
       <h2>About Me</h2>
       <p>Hello! I’m Alexandre Faroux, currently a Computational Science student at the department of mathematics of ETH Zurich.</p>
-      <p>I'm interested in using the power of scientific computing to solve problems in the domain of operations research, in particular in the field of finance.</p>
+      <p>I'm interested in using scientific computing to solve problems from operations research, in particular in the field of finance.</p>
     </section>
+
+    <section id="updates" class="updates">
+      <h2>Updates</h2>
+      <p>03/2025: I have started writing my Bachelor Thesis with Prof. Beatrice Acciaio on Numerical Optimal Transport!</p>
 
     <section id="cv" class="cv">
       <h2>Curriculum Vitae</h2>
@@ -147,26 +175,16 @@
       <h3>Skills</h3>
       <ul>
         <li>Programming Languages: Main: Python, C/C++ Secondary: MATLAB, PostGreSQL </li>
-        <li>Tools: Git, Docker, Unix</li>
+        <li>To Secondary:ls: Git, PostGreSQL , Docker, Unix</li>
         <li>Interests: Mathematical Modeling, Stochastics, Optimization, Machine Learning, High-Performance Computing</li>
       </ul>
 
       <h3>Experience</h3>
       <ul>
         <li><strong>Research Assistant at ETH Zürich (SN Lab)</strong> - Creation of Python library for the analysis of football games (2024-).</li>
-        <li><strong>Summer Internship at Lake Geneva Investment Partners</strong> - Developed code for the trading of fixed income securities  (2021 & 2022).</li>
+        <li><strong>Summer Internship at Lake Geneva Investment Partners</strong> - Developed code for the trading of fixed income securities (2021 & 2022).</li>
       </ul>
     </section>
-    <!--
-    <section id="projects" class="projects">
-      <h2>Projects</h2>
-      <ul>
-        <li><a href="https://github.com/afaroux/project1" target="_blank">Project 1</a> - A cool project I worked on.</li>
-        <li><a href="https://github.com/afaroux/project2" target="_blank">Project 2</a> - Another awesome project.</li>
-        <li><a href="https://github.com/afaroux/project3" target="_blank">Project 3</a> - Yet another amazing project.</li>
-      </ul>
-    </section>
-    -->
 
     <section id="contact" class="contact">
       <h2>Contact</h2>
@@ -175,7 +193,7 @@
   </div>
 
   <footer>
-    <p>© 2025 Alexandre Faroux. Built with ❤️ and code.</p>
+    <p>© 2025 Alexandre Faroux. Built with ❤️ and code. <a href="https://github.com/afaroux" target="_blank">GitHub</a></p>
   </footer>
 
 </body>
