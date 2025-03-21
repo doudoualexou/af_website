@@ -17,9 +17,9 @@
 
     /* Header */
     header {
-      background: linear-gradient(135deg, #4a90e2, #0077b6);
+      background: url('https://media.licdn.com/dms/image/v2/D4D16AQESxMZz5-_eEg/profile-displaybackgroundimage-shrink_350_1400/profile-displaybackgroundimage-shrink_350_1400/0/1715849947525?e=1747872000&v=beta&t=JjIgNd-HWEPZXkqS0AhI3TfKfI4zEpfq2vIXtZCYRgk') no-repeat center center/cover;
       color: white;
-      padding: 60px 20px;
+      padding: 100px 20px;
       text-align: center;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
@@ -27,11 +27,13 @@
     header h1 {
       font-size: 3rem;
       margin: 0;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
 
     header p {
       font-size: 1.3rem;
       margin-top: 10px;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
     }
 
     /* Navigation */
@@ -59,7 +61,7 @@
     }
 
     /* Sections */
-    .about, .projects, .contact, .cv {
+    section {
       background: white;
       padding: 30px;
       margin-bottom: 30px;
@@ -97,28 +99,6 @@
       margin-left: -1em;
     }
 
-    /* Projects Section */
-    .projects ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    .projects li {
-      margin-bottom: 15px;
-    }
-
-    .projects a {
-      color: #0077b6;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s ease;
-    }
-
-    .projects a:hover {
-      color: #ff5733;
-      text-decoration: underline;
-    }
-
     /* Footer */
     footer {
       text-align: center;
@@ -145,9 +125,12 @@
 
   <header>
     <h1>Alexandre Faroux</h1>
+    <p>Welcome to my personal website!</p>
     <nav>
       <a href="#about">About</a>
+      <a href="#updates">Updates</a>
       <a href="#cv">CV</a>
+      <a href="#hobbies">Hobbies</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -156,19 +139,14 @@
   <div class="container">
     <section id="about" class="about">
       <h2>About Me</h2>
-      <div style="display: flex; align-items: center; gap: 20px;">
-        <!-- Placeholder for your picture -->
-        <img src="https://media.licdn.com/dms/image/v2/D4D16AQESxMZz5-_eEg/profile-displaybackgroundimage-shrink_350_1400/profile-displaybackgroundimage-shrink_350_1400/0/1715849947525?e=1747872000&v=beta&t=JjIgNd-HWEPZXkqS0AhI3TfKfI4zEpfq2vIXtZCYRgk" alt="Alexandre Faroux" style="border-radius: 50%; width: 150px; height: 150px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);" />
-        <div>
-          <p>Hello! I’m Alexandre Faroux, currently a Computational Science student at the department of mathematics of ETH Zurich.</p>
-          <p>I'm interested in using scientific computing to solve problems from operations research, in particular in the field of finance.</p>
-        </div>
-      </div>
+      <p>Hello! I’m Alexandre Faroux, currently a Computational Science student at the department of mathematics of ETH Zurich.</p>
+      <p>I'm interested in using scientific computing to solve problems from operations research, in particular in the field of finance.</p>
     </section>
 
     <section id="updates" class="updates">
       <h2>Updates</h2>
       <p>03/2025: I have started writing my Bachelor Thesis with Prof. Beatrice Acciaio on Numerical Optimal Transport!</p>
+    </section>
 
     <section id="cv" class="cv">
       <h2>Curriculum Vitae</h2>
@@ -179,8 +157,8 @@
 
       <h3>Skills</h3>
       <ul>
-        <li>Programming Languages: Main: Python, C/C++ Secondary: MATLAB, PostGreSQL </li>
-        <li>TSoftware: Git, PostGreSQL , Docker, Unix</li>
+        <li>Programming Languages: Main: Python, C/C++ Secondary: MATLAB, PostGreSQL</li>
+        <li>Software: Git, PostGreSQL, Docker, Unix</li>
         <li>Interests: Mathematical Modeling, Stochastics, Optimization, Machine Learning, High-Performance Computing</li>
         <li>Languages: English, French, Italian, German</li>
       </ul>
@@ -194,8 +172,8 @@
 
     <section id="hobbies" class="hobbies">
       <h2>Hobbies</h2>
-      <p>Outside of the serious world of academics, I am an avid traveller and love flying objects. Check out my <a href="alexaviation.ch" target="_blank">Aviation Photography Website</a> !</p>
-      <p>I enjoy outdoor sports included but not limited to: skiing, trail running and scuba diving.</p>
+      <p>Outside of the serious world of academics, I am an avid traveller and love flying objects. Check out my <a href="alexaviation.ch" target="_blank">Aviation Photography Website</a>!</p>
+      <p>I enjoy outdoor sports including but not limited to: skiing, trail running, and scuba diving.</p>
     </section>
 
     <section id="contact" class="contact">
