@@ -3,71 +3,179 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name - CV</title>
+  <title>Alexandre Faroux - Portfolio</title>
   <style>
+    /* General Styles */
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Roboto', Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background: #f9f9f9;
+      background: #f4f4f9;
       color: #333;
+      line-height: 1.6;
     }
+
+    /* Header */
     header {
-      background: #4a90e2;
+      background: linear-gradient(135deg, #4a90e2, #0077b6);
       color: white;
-      padding: 20px;
+      padding: 40px 20px;
       text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    /* Navigation */
+    nav {
+      margin-top: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Container */
     .container {
-      max-width: 800px;
-      margin: auto;
+      max-width: 900px;
+      margin: 30px auto;
       padding: 20px;
     }
-    h1, h2 {
+
+    /* Sections */
+    .about, .projects, .contact, .cv {
+      background: white;
+      padding: 30px;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      color: #0077b6;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 15px;
+    }
+
+    .projects ul, .cv ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .projects li, .cv li {
       margin-bottom: 10px;
     }
-    .about, .cv {
-      background: white;
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+    .projects a {
+      color: #0077b6;
+      text-decoration: none;
+      font-weight: bold;
     }
+
+    .projects a:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer */
     footer {
       text-align: center;
-      padding: 10px;
+      padding: 15px;
       background: #4a90e2;
       color: white;
+      font-size: 0.9rem;
+      margin-top: 30px;
     }
-    a {
-      color: #4a90e2;
+
+    footer a {
+      color: #ffdd57;
       text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Your Name</h1>
-    <p>Profession / Title</p>
+    <h1>Alexandre Faroux</h1>
+    <p>Welcome to my personal website!</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#cv">CV</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
   <div class="container">
-    <section class="about">
+    <section id="about" class="about">
       <h2>About Me</h2>
-      <p>Hello! I’m Alexandre Faroux!</p>
+      <p>Hello! I’m Alexandre Faroux, currently a Computational Science student at the department of mathematics of ETH Zurich.</p>
+      <p>I'm interested in using the power of scientific computing to solve problems in the domain of operations research, in particular in the field of finance.</p>
     </section>
 
-    <section class="cv">
+    <section id="cv" class="cv">
       <h2>Curriculum Vitae</h2>
-
       <h3>Education</h3>
-      <p><strong>BSc. Computational Science and Engineering </strong> – ETH Zürich (Swiss Federal Institute of Technology) (2022-2025)</p>
+      <ul>
+        <li><strong>BSc. Computational Science and Engineering</strong> - ETH Zurich (2022–2025)</li>
+      </ul>
+
+      <h3>Skills</h3>
+      <ul>
+        <li>Programming Languages: Main: Python, C/C++ Secondary: MATLAB, PostGreSQL </li>
+        <li>Tools: Git, Docker, Unix</li>
+        <li>Interests: Mathematical Modeling, Stochastics, Optimization, Machine Learning, High-Performance Computing</li>
+      </ul>
+
+      <h3>Experience</h3>
+      <ul>
+        <li><strong>Research Assistant at ETH Zürich (SN Lab)</strong> - Creation of Python library for the analysis of football games (2024-).</li>
+        <li><strong>Summer Internship at Lake Geneva Investment Partners</strong> - Developed code for the trading of fixed income securities  (2021 & 2022).</li>
+      </ul>
+    </section>
+    <!--
+    <section id="projects" class="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li><a href="https://github.com/afaroux/project1" target="_blank">Project 1</a> - A cool project I worked on.</li>
+        <li><a href="https://github.com/afaroux/project2" target="_blank">Project 2</a> - Another awesome project.</li>
+        <li><a href="https://github.com/afaroux/project3" target="_blank">Project 3</a> - Yet another amazing project.</li>
+      </ul>
+    </section>
+    -->
+
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <p>Feel free to reach out to me on <a href="https://www.linkedin.com/in/alexandre-faroux/" target="_blank">LinkedIn</a>.</p>
     </section>
   </div>
 
   <footer>
-    <p>Let's Connect! <a href="https://www.linkedin.com/in/alexandre-faroux/">LinkedIn</a></p>
+    <p>© 2025 Alexandre Faroux. Built with ❤️ and code.</p>
   </footer>
 
 </body>
